@@ -59,11 +59,11 @@ def accumulate(combiner, base, n, term):
     >>> accumulate(lambda x, y: (x + y) % 17, 19, 20, square)
     16
     """
-    result, k = 0, 1
+    result, k = base, 1
     while k <= n:
-        result = combiner(result, term(n))
+        result = combiner(result, term(k))
         k += 1
-    return combiner(base, result)
+    return result
 
 def summation_using_accumulate(n, term):
     """Returns the sum of term(1) + ... + term(n). The implementation
