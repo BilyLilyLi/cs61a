@@ -102,10 +102,10 @@ def cond():
     return False
 
 def true_func():
-    return 47 / 42
+    return print(42)
 
 def false_func():
-    return 47
+    return print(47)
 
 def hailstone(x):
     """Print the hailstone sequence starting at x and return its
