@@ -33,7 +33,6 @@ def roll_dice(num_rolls, dice=six_sided):
         else:
             sum_all_rolls = sum_all_rolls + i
     return sum_all_rolls
-
     # END PROBLEM 1
 
 
@@ -44,7 +43,12 @@ def free_bacon(score):
     """
     assert score < 100, 'The game should be over.'
     # BEGIN PROBLEM 2
-    "*** YOUR CODE HERE ***"
+    if score < 10:
+        zero_dice_score = 10 - score
+        return zero_dice_score
+    else:
+        zero_dice_score = 10 - (score % 10) + (score // 10)
+        return zero_dice_score
     # END PROBLEM 2
 
 
