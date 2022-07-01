@@ -80,7 +80,22 @@ def is_swap(player_score, opponent_score):
     Return whether the two scores should be swapped
     """
     # BEGIN PROBLEM 4
-    "*** YOUR CODE HERE ***"
+    player_score_onesdigit = player_score % 10
+    opponent_score_onesdigit = opponent_score % 10
+    difference_btw_onesdigit = abs(player_score_onesdigit - opponent_score_onesdigit)
+    if opponent_score >= 100:
+        opponent_score_real_tensdigit = int(str(opponent_score)[1])
+        # opponent_score_tensdigit = opponent_score // 10
+        # while opponent_score_tensdigit > 10:
+        #     opponent_score_tensdigit = opponent_score_tensdigit // 10
+        #     opponent_score_real_tensdigit = opponent_score_tensdigit % 10
+    else:
+        opponent_score_real_tensdigit = opponent_score // 10
+
+    if difference_btw_onesdigit == opponent_score_real_tensdigit:
+        return True
+    else:
+        return False
     # END PROBLEM 4
 
 
