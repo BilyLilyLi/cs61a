@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41803c1-9bb5-45f8-8dba-03d6d0830725" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/hog/.ok_history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/.ok_storage.db" beforeDir="false" afterPath="$PROJECT_DIR$/hog/.ok_storage.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/hog.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/hog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hog/tests/04.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/tests/04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw02/hw02.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw02/hw02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog/tests/05a.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/tests/05a.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
