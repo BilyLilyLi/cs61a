@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/hog/.ok_history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/.ok_storage.db" beforeDir="false" afterPath="$PROJECT_DIR$/hog/.ok_storage.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog/dice.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/dice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hog/hog.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/hog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hog/tests/05a.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/tests/05a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hog/tests/05b.py" beforeDir="false" afterPath="$PROJECT_DIR$/hog/tests/05b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
