@@ -139,6 +139,7 @@ def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
     current_turn_p1_score = 0
     last_turn_p0_score = 0
     last_turn_p1_score = 0
+    turn_played = 0
     current_player = who
     while (score0 < goal) and (score1 < goal):
         if current_player == 0:
@@ -166,7 +167,12 @@ def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
     # END PROBLEM 5
     # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
     # BEGIN PROBLEM 6
-    "*** YOUR CODE HERE ***"
+    #     if turn_played == 0:
+    #         commentary_funcall = say(score0, score1)
+    #     else:
+    #         commentary_funcall = commentary_funcall(score0, score1)
+    #     turn_played += 1
+        say = say(score0, score1)
     # END PROBLEM 6
     return score0, score1
 
