@@ -332,7 +332,11 @@ def max_scoring_num_rolls(dice=six_sided, trials_count=1000):
     1
     """
     # BEGIN PROBLEM 9
-    "*** YOUR CODE HERE ***"
+    turn_score = []
+    max_dice = make_averaged(roll_dice, trials_count)
+    for i in range(1, 11):
+        turn_score.append(max_dice(i, dice))
+    return turn_score.index(max(turn_score)) + 1
     # END PROBLEM 9
 
 
