@@ -1,3 +1,4 @@
+from operator import add, mul, mod
 
 def lambda_curry2(func):
     """
@@ -14,8 +15,7 @@ def lambda_curry2(func):
     >>> lambda_curry2(mod)(123)(10)
     3
     """
-    "*** YOUR CODE HERE ***"
-    return ______
+    return lambda x: lambda y: func(x, y)
 
 
 
