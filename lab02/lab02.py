@@ -46,8 +46,14 @@ def count_cond(condition):
     >>> count_primes(20)   # 2, 3, 5, 7, 11, 13, 17, 19
     8
     """
-    "*** YOUR CODE HERE ***"
-
+    def count_c(n):
+        i, count_num = 1, 0
+        while i <= n:
+            if condition(n, i):
+                count_num += 1
+            i += 1
+        return count_num
+    return count_c
 
 
 def both_paths(sofar="S"):
@@ -61,7 +67,14 @@ def both_paths(sofar="S"):
     >>> _ = upup()
     SUU
     """
-    "*** YOUR CODE HERE ***"
+    print(sofar)
+    def up():
+        return both_paths(sofar + 'U')
+    def down():
+        return both_paths(sofar + 'D')
+    
+    return up, down
+
 
 
 
