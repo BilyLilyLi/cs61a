@@ -72,7 +72,7 @@ def both_paths(sofar="S"):
         return both_paths(sofar + 'U')
     def down():
         return both_paths(sofar + 'D')
-    
+
     return up, down
 
 
@@ -109,7 +109,7 @@ def composite_identity(f, g):
     >>> b1(4)                            # (4 + 1)^2 != 4^2 + 1
     False
     """
-    "*** YOUR CODE HERE ***"
+    return lambda x: True if f(g(x)) == g(f(x)) else False
 
 
 
@@ -139,5 +139,18 @@ def cycle(f1, f2, f3):
     >>> do_two_cycles(1)
     19
     """
-    "*** YOUR CODE HERE ***"
+    def ret_func(n):
+        def ret_cycle_func(x):
+            i = 0
+            while i < n:
+                if i % 3 == 0:
+                    x = f1(x)
+                elif i % 3 == 1:
+                    x = f2(x)
+                else:
+                    x = f3(x)
+                i += 1
+            return x
+        return ret_cycle_func
+    return ret_func
 
