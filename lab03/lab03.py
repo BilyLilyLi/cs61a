@@ -11,7 +11,16 @@ def pascal(row, column):
     >>> pascal(3, 2)	# Row 4 (1 3 3 1), 3rd entry
     3
     """
-    "*** YOUR CODE HERE ***"
+    current_row = row
+    current_column = column
+    if current_column == 0:
+        return 1
+    if current_row == current_column:
+        return 1
+    elif current_row < current_column:
+        return 0
+    else:
+        return pascal(current_row-1, current_column) + pascal(current_row-1, current_column-1)
 
 
 def compose1(f, g):
